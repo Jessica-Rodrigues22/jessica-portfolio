@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Website</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+    <nav>
+
+        <div class="logo">
+
+            <i class="fa-solid fa-laptop-code"></i>
+
+            <h2>Jessica<span>Portfolio</span></h2>
+
+        </div>
+
+        <ul>
+
+           <li><a href="#home" class="active">Home</a></li>
+           <li><a href="#about">About</a></li>
+           <li><a href="#contact">Contact</a></li>
+
+        </ul>
+
+    </nav>
+
+    <!-- ================= HERO SECTION ================= -->
+
+    <section id="home" class="hero">
+        <!-- Left Side -->
+
+        <div class="left">
+
+            <h4>WELCOME TO</h4>
+
+           <h1>My <span>Website</span></h1>
+
+        <p>This is my first webpage created using HTML and CSS.</p>
+
+        <h3 id="greeting"></h3>
+
+        <button id="startBtn" class="hero-btn">
+        <i class="fa-solid fa-rocket"></i>
+        Let's Get Started
+        </button>
+        </div>
+
+        <!-- Right Side -->
+
+        <div class="right">
+
+            <img src="image.jpg" alt="Website Image">
+
+        </div>
+
+    </section>
+<!-- ================= REGISTRATION ================= -->
+<section class="registration">
+
+    <div class="registration-container">
+
+        <div class="registration-title">
+            <i class="fa-solid fa-address-card"></i>
+            <h2>Student <span>Registration</span></h2>
+        </div>
+
+        <div class="title-line">
+            <span></span>
+            <i class="fa-solid fa-star"></i>
+            <span></span>
+        </div>
+
+        <form class="register-form">
+
+            <div class="input-box">
+                <i class="fa-solid fa-user"></i>
+                <input type="text" placeholder="Enter your name" required>
+            </div>
+
+            <button type="submit" class="submit-btn">
+                <i class="fa-solid fa-paper-plane"></i>
+                Submit
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+<section id="about" class="about">
+    <h2>About Me</h2>
+
+    <div class="about-content">
+
+        <img src="profile.jpeg" alt="Profile">
+
+        <div>
+            <h3>Jessica Rodrigues</h3>
+
+            <p>
+                I am an MCA student passionate about Web Development,
+                Java, Python, Database Management Systems and Software Development.
+                I enjoy creating modern websites and applications.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="skills">
+
+    <h2>My Skills</h2>
+
+    <div class="skill">
+
+        <p>HTML</p>
+        <div class="bar">
+            <div class="progress html"></div>
+        </div>
+
+        <p>CSS</p>
+        <div class="bar">
+            <div class="progress css"></div>
+        </div>
+
+        <p>JavaScript</p>
+        <div class="bar">
+            <div class="progress js"></div>
+        </div>
+
+        <p>Python</p>
+        <div class="bar">
+            <div class="progress java"></div>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="projects">
+
+    <h2>My Projects</h2>
+
+    <div class="project-container">
+
+        <div class="project-card">
+
+            <i class="fa-solid fa-book"></i>
+
+            <h3>Study Material Sharing App</h3>
+
+            <p>
+                Android application for students to upload
+                and download study materials.
+            </p>
+
+        </div>
+
+        <div class="project-card">
+
+            <i class="fa-solid fa-building-columns"></i>
+
+            <h3>Bank Management System</h3>
+
+            <p>
+                Desktop application using C# and .NET
+                for managing customer accounts.
+            </p>
+
+        </div>
+
+        <div class="project-card">
+
+            <i class="fa-solid fa-user-graduate"></i>
+
+            <h3>Student Registration System</h3>
+
+            <p>
+                Web-based student registration form
+                developed using HTML, CSS and JavaScript.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="contact" class="contact">
+
+    <h2>Contact Me</h2>
+
+    <form>
+
+        <input type="text" placeholder="Your Name">
+
+        <input type="email" placeholder="Your Email">
+
+        <textarea placeholder="Your Message"></textarea>
+
+        <button type="submit">
+            Send Message
+        </button>
+
+    </form>
+
+</section>
+
+<section class="calculator">
+
+    <h2>Simple Calculator</h2>
+
+    <div class="calc-box">
+
+        <input type="number" id="num1" placeholder="First Number">
+
+        <input type="number" id="num2" placeholder="Second Number">
+
+        <div class="button-group">
+
+    <button onclick="calculate('+')">
+        <i class="fa-solid fa-plus"></i> Add
+    </button>
+
+    <button onclick="calculate('-')">
+        <i class="fa-solid fa-minus"></i> Subtract
+    </button>
+
+    <button onclick="calculate('*')">
+        <i class="fa-solid fa-xmark"></i> Multiply
+    </button>
+
+    <button onclick="calculate('/')">
+        <i class="fa-solid fa-divide"></i> Divide
+    </button>
+
+</div>
+
+<h3 id="result"></h3>
+
+</section>
+<!-- Decorative Divider -->
+
+        <div class="divider">
+
+            <span>★</span>
+
+        </div>
+
+    <!-- Decorative Background Dots -->
+
+    <div class="dots dots-left"></div>
+
+    <div class="dots dots-right"></div>
+
+    <!-- Decorative Background Circles -->
+
+    <div class="circle one"></div>
+
+    <div class="circle two"></div>
+
+    <div class="circle three"></div>
+
+    <script src="script.js"></script>
+    <footer>
+
+    <h3>Jessica Rodrigues</h3>
+
+    <p>MCA Student | Web Developer</p>
+
+    <div class="socials">
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-github"></i>
+    </div>
+
+    <p>© 2026 All Rights Reserved</p>
+
+</footer>
+
+</body>
+
+</html>
